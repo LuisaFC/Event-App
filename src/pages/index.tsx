@@ -1,3 +1,6 @@
+import React from "react";
+import { Layout } from "systems/Core";
+
 export default function Home() {
-  return <div>Hello World</div>
+  return <Layout title="Events App">Hello World</Layout>
 }
