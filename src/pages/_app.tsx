@@ -1,8 +1,14 @@
 import { AppProps } from 'next/app'
+import {Chakra} from 'systems/Core'
+
 import './index.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+  return (
+    <Chakra>
+      <Component {...pageProps} />
+    </Chakra>
+  )
 }
 
 export default App
